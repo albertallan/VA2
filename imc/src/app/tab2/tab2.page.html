@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Historico de Cadastros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form *ngFor="let cadastros of itenscadastros">
+    <ion-item>
+      <ion-label>
+        <h2>Titulo:{{ cadastros.titulo }}</h2>
+        <h2>Valor:{{ cadastros.valor }}</h2>
+      </ion-label>
+    </ion-item>
+  </form>
+</ion-content>

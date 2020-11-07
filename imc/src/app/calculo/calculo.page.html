@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form id="card-form" (ngSubmit)="cadastroSorvete()" *ngIf="imc == null">
+    <ion-item>
+      <ion-label>Titulo</ion-label>
+      <ion-input type="text" [(ngModel)]="cadastros.titulo" name="altura"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Valor</ion-label>
+      <ion-textarea type='text' [(ngModel)]="cadastros.valor" name="peso"></ion-textarea>
+    </ion-item>
+    <ion-button id="botao" ion-button type="submit" block>Cadastrar</ion-button>
+    
+  </form>
+</ion-content>
